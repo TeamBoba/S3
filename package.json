@@ -26,7 +26,7 @@
     "babel-plugin-transform-es2015-modules-commonjs": "^6.2.0",
     "babel-plugin-transform-es2015-parameters": "^6.2.0",
     "bucketclient": "scality/bucketclient",
-    "buffer-split": "^1.0.0",
+    "buffer-indexof": "^1.1.0",
     "commander": "^2.9.0",
     "ioctl": "^2.0.0",
     "kinetic": "scality/kineticlib",
