@@ -1,0 +1,169 @@
+/ᐠ｡.｡ᐟ\ electra [S3] 04:01 AM $ rm topology*; rm -rf local*/*; S3BACKEND=mem S3SPROXYD=kinetic npm start
+rm: topology*: No such file or directory
+
+> s3@1.1.0 start /Users/electra/scality_hackathon/S3
+> node init.js && node index.js
+
+{"name":"S3","level":"info","message":"No init required. Go forth and store data.","hostname":"Electras-MBP","pid":53416}
+{"name":"S3","level":"warn","message":"scality kms unavailable. Using file kms backend unless mem specified.","hostname":"Electras-MBP","pid":53417}
+{"name":"S3","level":"warn","message":"scality kms unavailable. Using file kms backend unless mem specified.","hostname":"Electras-MBP","pid":53418}
+{"name":"S3","https":false,"level":"info","message":"Https server configuration","hostname":"Electras-MBP","pid":53418}
+{"name":"S3","address":"::","port":8000,"pid":53418,"level":"info","message":"server started","hostname":"Electras-MBP"}
+{"name":"S3","clientIP":"::ffff:127.0.0.1","clientPort":59870,"httpMethod":"PUT","httpURL":"/test/","time":1477220506891,"req_id":"17a163077d82951a4fb3","level":"info","message":"received request","hostname":"Electras-MBP","pid":53418}
+{"name":"S3","bucketName":"test","implName":"memorybucket","error":{"code":404,"description":"The specified bucket does not exist.","NoSuchBucket":true},"time":1477220506903,"req_id":"17a163077d82951a4fb3","level":"warn","message":"error from metadata","hostname":"Electras-MBP","pid":53418}
+{"name":"S3","bucketName":"test","clientIP":"::ffff:127.0.0.1","clientPort":59870,"httpMethod":"PUT","httpURL":"/test/","httpCode":200,"time":1477220506906,"req_id":"17a163077d82951a4fb3","elapsed_ms":15.368349,"level":"info","message":"responded to request","hostname":"Electras-MBP","pid":53418}
+{"name":"S3","clientIP":"::ffff:127.0.0.1","clientPort":59871,"httpMethod":"PUT","httpURL":"/test/2MB","time":1477220512139,"req_id":"59ef149f6f101e8c86b6","level":"info","message":"received request","hostname":"Electras-MBP","pid":53418}
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+SIZE
+1048576
+SIZE
+1048576
+[ <Buffer 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ... >,
+  <Buffer 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ... > ]
+####################################################################################################
+####################################################################################################
+####################################################################################################
+####################################################################################################
+####################################################################################################
+6c6f63616c686f73743a3831323385faa0f131597c6c6f63616c686f73743a383132338a6d0618090e
+{"name":"S3","bucketName":"test","objectKey":"2MB","clientIP":"::ffff:127.0.0.1","clientPort":59871,"httpMethod":"PUT","httpURL":"/test/2MB","contentLength":2097152,"httpCode":200,"time":1477220512210,"req_id":"59ef149f6f101e8c86b6","elapsed_ms":70.965717,"level":"info","message":"responded to request","hostname":"Electras-MBP","pid":53418}
+{"name":"S3","clientIP":"::ffff:127.0.0.1","clientPort":59872,"httpMethod":"GET","httpURL":"/test/2MB","time":1477220529867,"req_id":"446be70b5b8cddb8ae3f","level":"info","message":"received request","hostname":"Electras-MBP","pid":53418}
+{ 'md-model-version': 2,
+  'owner-display-name': 'Bart',
+  'owner-id': '79a59df900b949e55d96a1e698fbacedfd6e09d98eacf8f8d5218e7cd47ef2be',
+  'content-length': 2097152,
+  'content-type': 'binary/octet-stream',
+  'last-modified': '2016-10-23T11:01:52.208Z',
+  'content-md5': 'b2d1236c286a3c0704224fe4105eca49',
+  'x-amz-server-version-id': '',
+  'x-amz-storage-class': 'STANDARD',
+  'x-amz-website-redirect-location': '',
+  'x-amz-server-side-encryption': '',
+  'x-amz-server-side-encryption-aws-kms-key-id': '',
+  'x-amz-server-side-encryption-customer-algorithm': '',
+  'kinetic-is-master': '',
+  'kinetic-is-part': '',
+  location: 
+   [ { key: [Object],
+       size: 2097152,
+       start: 0,
+       dataStoreName: 'kinetic' } ],
+  'x-amz-version-id': 'null',
+  acl: 
+   { Canned: 'private',
+     FULL_CONTROL: [],
+     WRITE_ACP: [],
+     READ: [],
+     READ_ACP: [] },
+  'x-amz-meta-s3cmd-attrs': 'uid:501/gname:staff/uname:electra/gid:20/mode:33188/mtime:1477219961/atime:1477220352/md5:b2d1236c286a3c0704224fe4105eca49/ctime:1477219961' }
+objectGetInfo { key: 
+   { type: 'Buffer',
+     data: 
+      [ 108,
+        111,
+        99,
+        97,
+        108,
+        104,
+        111,
+        115,
+        116,
+        58,
+        56,
+        49,
+        50,
+        51,
+        17,
+        239,
+        105,
+        9,
+        185,
+        171 ] },
+  size: 2097152,
+  start: 0,
+  dataStoreName: 'kinetic' }
+{"name":"S3","bucketName":"test","objectKey":"2MB","clientIP":"::ffff:127.0.0.1","clientPort":59872,"httpMethod":"GET","httpURL":"/test/2MB","contentLength":2097152,"httpCode":200,"time":1477220529886,"req_id":"446be70b5b8cddb8ae3f","elapsed_ms":19.958779,"level":"info","message":"responded with streamed content","hostname":"Electras-MBP","pid":53418}
+{"name":"S3","clientIP":"::ffff:127.0.0.1","clientPort":59875,"httpMethod":"GET","httpURL":"/test/2MB","time":1477220652893,"req_id":"5611d13ef4515a5ecb9b","level":"info","message":"received request","hostname":"Electras-MBP","pid":53418}
+{ 'md-model-version': 2,
+  'owner-display-name': 'Bart',
+  'owner-id': '79a59df900b949e55d96a1e698fbacedfd6e09d98eacf8f8d5218e7cd47ef2be',
+  'content-length': 2097152,
+  'content-type': 'binary/octet-stream',
+  'last-modified': '2016-10-23T11:01:52.208Z',
+  'content-md5': 'b2d1236c286a3c0704224fe4105eca49',
+  'x-amz-server-version-id': '',
+  'x-amz-storage-class': 'STANDARD',
+  'x-amz-website-redirect-location': '',
+  'x-amz-server-side-encryption': '',
+  'x-amz-server-side-encryption-aws-kms-key-id': '',
+  'x-amz-server-side-encryption-customer-algorithm': '',
+  'kinetic-is-master': '',
+  'kinetic-is-part': '',
+  location: 
+   [ { key: [Object],
+       size: 2097152,
+       start: 0,
+       dataStoreName: 'kinetic' } ],
+  'x-amz-version-id': 'null',
+  acl: 
+   { Canned: 'private',
+     FULL_CONTROL: [],
+     WRITE_ACP: [],
+     READ: [],
+     READ_ACP: [] },
+  'x-amz-meta-s3cmd-attrs': 'uid:501/gname:staff/uname:electra/gid:20/mode:33188/mtime:1477219961/atime:1477220352/md5:b2d1236c286a3c0704224fe4105eca49/ctime:1477219961' }
+objectGetInfo { key: 
+   { type: 'Buffer',
+     data: 
+      [ 108,
+        111,
+        99,
+        97,
+        108,
+        104,
+        111,
+        115,
+        116,
+        58,
+        56,
+        49,
+        50,
+        51,
+        17,
+        239,
+        105,
+        9,
+        185,
+        171 ] },
+  size: '2097111',
+  start: 0,
+  dataStoreName: 'kinetic',
+  range: [ 41, 2097151 ] }
+{"name":"S3","bucketName":"test","objectKey":"2MB","clientIP":"::ffff:127.0.0.1","clientPort":59875,"httpMethod":"GET","httpURL":"/test/2MB","contentLength":2097111,"httpCode":206,"time":1477220652901,"req_id":"5611d13ef4515a5ecb9b","elapsed_ms":7.907143,"level":"info","message":"responded with streamed content","hostname":"Electras-MBP","pid":53418}
+
+cmds:
+/ᐠ｡.｡ᐟ\ electra [object] 03:59 AM $ s3cmd mb s3://test
+Bucket 's3://test/' created
+/ᐠ｡.｡ᐟ\ electra [object] 04:01 AM $ s3cmd put test_files/2MB s3://test
+WARNING: Module python-magic is not available. Guessing MIME types based on file extensions.
+upload: 'test_files/2MB' -> 's3://test/2MB'  [1 of 1]
+ 2097152 of 2097152   100% in    0s    22.92 MB/s  done
+/ᐠ｡.｡ᐟ\ electra [object] 04:01 AM $ s3cmd get s3://test/2MB
+ERROR: Parameter problem: File ./2MB already exists. Use either of --force / --continue / --skip-existing or give it a new name.
+/ᐠ｡.｡ᐟ\ electra [object] 04:01 AM $ rm 2MB 
+/ᐠ｡.｡ᐟ\ electra [object] 04:02 AM $ s3cmd get s3://test/2MB
+download: 's3://test/2MB' -> './2MB'  [1 of 1]
+      41 of 2097152     0% in  120s     0.34 B/s  failed
+WARNING: Retrying failed request: /2MB (EOF from S3!)
+WARNING: Waiting 3 sec...
+download: 's3://test/2MB' -> './2MB'  [1 of 1]
+^CSee ya!
+/ᐠ｡.｡ᐟ\ electra [object] 04:05 AM $ 
