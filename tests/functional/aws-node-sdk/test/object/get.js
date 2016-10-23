@@ -13,7 +13,7 @@ const contentEncoding = 'aws-chunked,gzip';
 // a UNIX timestamp for Expires header
 const expires = new Date();
 
-describe.only('GET object', () => {
+describe('GET object', () => {
     withV4(sigCfg => {
         let bucketUtil;
         let s3;
