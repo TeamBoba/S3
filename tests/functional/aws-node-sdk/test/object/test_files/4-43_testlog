@@ -1,0 +1,233 @@
+/ᐠ｡.｡ᐟ\ electra [S3] 04:32 AM $ rm topology*; rm -rf local*/*; S3BACKEND=mem S3SPROXYD=kinetic npm start
+rm: topology*: No such file or directory
+
+> s3@1.1.0 start /Users/electra/scality_hackathon/S3
+> node init.js && node index.js
+
+{"name":"S3","level":"info","message":"No init required. Go forth and store data.","hostname":"Electras-MBP","pid":53564}
+{"name":"S3","level":"warn","message":"scality kms unavailable. Using file kms backend unless mem specified.","hostname":"Electras-MBP","pid":53565}
+{"name":"S3","level":"warn","message":"scality kms unavailable. Using file kms backend unless mem specified.","hostname":"Electras-MBP","pid":53566}
+{"name":"S3","https":false,"level":"info","message":"Https server configuration","hostname":"Electras-MBP","pid":53566}
+{"name":"S3","address":"::","port":8000,"pid":53566,"level":"info","message":"server started","hostname":"Electras-MBP"}
+{"name":"S3","clientIP":"::ffff:127.0.0.1","clientPort":59955,"httpMethod":"PUT","httpURL":"/test/","time":1477222386654,"req_id":"72de52336384f1550be6","level":"info","message":"received request","hostname":"Electras-MBP","pid":53566}
+{"name":"S3","bucketName":"test","implName":"memorybucket","error":{"code":404,"description":"The specified bucket does not exist.","NoSuchBucket":true},"time":1477222386665,"req_id":"72de52336384f1550be6","level":"warn","message":"error from metadata","hostname":"Electras-MBP","pid":53566}
+{"name":"S3","bucketName":"test","clientIP":"::ffff:127.0.0.1","clientPort":59955,"httpMethod":"PUT","httpURL":"/test/","httpCode":200,"time":1477222386669,"req_id":"72de52336384f1550be6","elapsed_ms":14.942618,"level":"info","message":"responded to request","hostname":"Electras-MBP","pid":53566}
+{"name":"S3","clientIP":"::ffff:127.0.0.1","clientPort":59956,"httpMethod":"PUT","httpURL":"/test/2MB","time":1477222388570,"req_id":"43397bc4d8b604408f1f","level":"info","message":"received request","hostname":"Electras-MBP","pid":53566}
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+=========================================
+SIZE
+1048576
+SIZE
+1048576
+[ <Buffer 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ... >,
+  <Buffer 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ... > ]
+####################################################################################################
+####################################################################################################
+####################################################################################################
+####################################################################################################
+####################################################################################################
+<Buffer 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ... >
+<Buffer 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ... >
+tohex 6c6f63616c686f73743a383132334c223f815c707c6c6f63616c686f73743a3831323397a5d4bfdc63
+<Buffer 6c 6f 63 61 6c 68 6f 73 74 3a 38 31 32 33 4c 22 3f 81 5c 70 7c 6c 6f 63 61 6c 68 6f 73 74 3a 38 31 32 33 97 a5 d4 bf dc 63>
+{"name":"S3","bucketName":"test","objectKey":"2MB","clientIP":"::ffff:127.0.0.1","clientPort":59956,"httpMethod":"PUT","httpURL":"/test/2MB","contentLength":2097152,"httpCode":200,"time":1477222388650,"req_id":"43397bc4d8b604408f1f","elapsed_ms":79.582328,"level":"info","message":"responded to request","hostname":"Electras-MBP","pid":53566}
+{"name":"S3","clientIP":"::ffff:127.0.0.1","clientPort":59957,"httpMethod":"GET","httpURL":"/test/2MB","time":1477222391049,"req_id":"a2acf0cef944f57747b5","level":"info","message":"received request","hostname":"Electras-MBP","pid":53566}
+{ 'md-model-version': 2,
+  'owner-display-name': 'Bart',
+  'owner-id': '79a59df900b949e55d96a1e698fbacedfd6e09d98eacf8f8d5218e7cd47ef2be',
+  'content-length': 2097152,
+  'content-type': 'binary/octet-stream',
+  'last-modified': '2016-10-23T11:33:08.646Z',
+  'content-md5': 'b2d1236c286a3c0704224fe4105eca49',
+  'x-amz-server-version-id': '',
+  'x-amz-storage-class': 'STANDARD',
+  'x-amz-website-redirect-location': '',
+  'x-amz-server-side-encryption': '',
+  'x-amz-server-side-encryption-aws-kms-key-id': '',
+  'x-amz-server-side-encryption-customer-algorithm': '',
+  location: 
+   [ { key: [Object],
+       size: 2097152,
+       start: 0,
+       dataStoreName: 'kinetic' } ],
+  'x-amz-version-id': 'null',
+  acl: 
+   { Canned: 'private',
+     FULL_CONTROL: [],
+     WRITE_ACP: [],
+     READ: [],
+     READ_ACP: [] },
+  'x-amz-meta-s3cmd-attrs': 'uid:501/gname:staff/uname:electra/gid:20/mode:33188/mtime:1477219961/atime:1477222335/md5:b2d1236c286a3c0704224fe4105eca49/ctime:1477219961' }
+objectGetInfo { key: 
+   { type: 'Buffer',
+     data: 
+      [ 108,
+        111,
+        99,
+        97,
+        108,
+        104,
+        111,
+        115,
+        116,
+        58,
+        56,
+        49,
+        50,
+        51,
+        162,
+        95,
+        29,
+        179,
+        116,
+        132 ] },
+  size: 2097152,
+  start: 0,
+  dataStoreName: 'kinetic' }
+range in backend undefined
+range is not true: undefined
+See if req. repeats
+{"name":"S3","bucketName":"test","objectKey":"2MB","clientIP":"::ffff:127.0.0.1","clientPort":59957,"httpMethod":"GET","httpURL":"/test/2MB","contentLength":2097152,"httpCode":200,"time":1477222391068,"req_id":"a2acf0cef944f57747b5","elapsed_ms":18.721521,"level":"info","message":"responded with streamed content","hostname":"Electras-MBP","pid":53566}
+{"name":"S3","clientIP":"::ffff:127.0.0.1","clientPort":59961,"httpMethod":"GET","httpURL":"/test/2MB","time":1477222514081,"req_id":"914ed73e989dbcad8a52","level":"info","message":"received request","hostname":"Electras-MBP","pid":53566}
+{ 'md-model-version': 2,
+  'owner-display-name': 'Bart',
+  'owner-id': '79a59df900b949e55d96a1e698fbacedfd6e09d98eacf8f8d5218e7cd47ef2be',
+  'content-length': 2097152,
+  'content-type': 'binary/octet-stream',
+  'last-modified': '2016-10-23T11:33:08.646Z',
+  'content-md5': 'b2d1236c286a3c0704224fe4105eca49',
+  'x-amz-server-version-id': '',
+  'x-amz-storage-class': 'STANDARD',
+  'x-amz-website-redirect-location': '',
+  'x-amz-server-side-encryption': '',
+  'x-amz-server-side-encryption-aws-kms-key-id': '',
+  'x-amz-server-side-encryption-customer-algorithm': '',
+  location: 
+   [ { key: [Object],
+       size: 2097152,
+       start: 0,
+       dataStoreName: 'kinetic' } ],
+  'x-amz-version-id': 'null',
+  acl: 
+   { Canned: 'private',
+     FULL_CONTROL: [],
+     WRITE_ACP: [],
+     READ: [],
+     READ_ACP: [] },
+  'x-amz-meta-s3cmd-attrs': 'uid:501/gname:staff/uname:electra/gid:20/mode:33188/mtime:1477219961/atime:1477222335/md5:b2d1236c286a3c0704224fe4105eca49/ctime:1477219961' }
+objectGetInfo { key: 
+   { type: 'Buffer',
+     data: 
+      [ 108,
+        111,
+        99,
+        97,
+        108,
+        104,
+        111,
+        115,
+        116,
+        58,
+        56,
+        49,
+        50,
+        51,
+        162,
+        95,
+        29,
+        179,
+        116,
+        132 ] },
+  size: '2097111',
+  start: 0,
+  dataStoreName: 'kinetic',
+  range: [ 41, 2097151 ] }
+range in backend [ 41, 2097151 ]
+found range [ 41, 2097151 ]
+{"name":"S3","bucketName":"test","objectKey":"2MB","clientIP":"::ffff:127.0.0.1","clientPort":59961,"httpMethod":"GET","httpURL":"/test/2MB","contentLength":2097111,"httpCode":206,"time":1477222514089,"req_id":"914ed73e989dbcad8a52","elapsed_ms":8.14743,"level":"info","message":"responded with streamed content","hostname":"Electras-MBP","pid":53566}
+^C{"name":"S3","level":"info","message":"server shutting down","hostname":"Electras-MBP","pid":53566}
+
+-----------------------------cmds used:
+/ᐠ｡.｡ᐟ\ electra [object] 04:32 AM $ s3cmd mb s3://test
+Bucket 's3://test/' created
+/ᐠ｡.｡ᐟ\ electra [object] 04:33 AM $ s3cmd put test_files/2MB s3://test
+WARNING: Module python-magic is not available. Guessing MIME types based on file extensions.
+upload: 'test_files/2MB' -> 's3://test/2MB'  [1 of 1]
+ 2097152 of 2097152   100% in    0s    20.90 MB/s  done
+/ᐠ｡.｡ᐟ\ electra [object] 04:33 AM $ s3cmd get s3://test/2MB
+download: 's3://test/2MB' -> './2MB'  [1 of 1]
+      41 of 2097152     0% in  120s     0.34 B/s  failed
+WARNING: Retrying failed request: /2MB (EOF from S3!)
+WARNING: Waiting 3 sec...
+download: 's3://test/2MB' -> './2MB'  [1 of 1]
+      82 of 2097152     0% in   32s     1.27 B/s  failed
+WARNING: Retrying failed request: /2MB (EOF from S3!)
+WARNING: Waiting 6 sec...
+download: 's3://test/2MB' -> './2MB'  [1 of 1]
+ 0 of 0     0% in    0s     0.00 B/s  failed
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    An unexpected error has occurred.
+  Please try reproducing the error using
+  the latest s3cmd code from the git master
+  branch found at:
+    https://github.com/s3tools/s3cmd
+  and have a look at the known issues list:
+    https://github.com/s3tools/s3cmd/wiki/Common-known-issues-and-their-solutions
+  If the error persists, please report the
+  following lines (removing any private
+  info as necessary) to:
+   s3tools-bugs@lists.sourceforge.net
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Invoked as: /Library/Frameworks/Python.framework/Versions/2.7/bin/s3cmd get s3://test/2MB
+Problem: error: [Errno 61] Connection refused
+S3cmd:   1.6.1
+python:   2.7.12 (v2.7.12:d33e0cf91556, Jun 26 2016, 12:10:39) 
+[GCC 4.2.1 (Apple Inc. build 5666) (dot 3)]
+environment LANG=en_US.UTF-8
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/s3cmd-1.6.1-py2.7.egg/EGG-INFO/scripts/s3cmd", line 2919, in <module>
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/s3cmd-1.6.1-py2.7.egg/EGG-INFO/scripts/s3cmd", line 2841, in main
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/s3cmd-1.6.1-py2.7.egg/EGG-INFO/scripts/s3cmd", line 548, in cmd_object_get
+  File "build/bdist.macosx-10.6-intel/egg/S3/S3.py", line 647, in object_get
+    response = self.recv_file(request, stream, labels, start_position)
+  File "build/bdist.macosx-10.6-intel/egg/S3/S3.py", line 1462, in recv_file
+    return self.recv_file(request, stream, labels, current_position, retries - 1)
+  File "build/bdist.macosx-10.6-intel/egg/S3/S3.py", line 1462, in recv_file
+    return self.recv_file(request, stream, labels, current_position, retries - 1)
+  File "build/bdist.macosx-10.6-intel/egg/S3/S3.py", line 1344, in recv_file
+    conn = ConnMan.get(self.get_hostname(resource['bucket']))
+  File "build/bdist.macosx-10.6-intel/egg/S3/ConnMan.py", line 192, in get
+    conn.c.connect()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 836, in connect
+    self.timeout, self.source_address)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py", line 575, in create_connection
+    raise err
+error: [Errno 61] Connection refused
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    An unexpected error has occurred.
+  Please try reproducing the error using
+  the latest s3cmd code from the git master
+  branch found at:
+    https://github.com/s3tools/s3cmd
+  and have a look at the known issues list:
+    https://github.com/s3tools/s3cmd/wiki/Common-known-issues-and-their-solutions
+  If the error persists, please report the
+  above lines (removing any private
+  info as necessary) to:
+   s3tools-bugs@lists.sourceforge.net
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+/ᐠ｡.｡ᐟ\ electra [object] 04:35 AM $
